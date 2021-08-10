@@ -1,0 +1,33 @@
+.content {
+  color: #141619;
+  position: relative;
+  margin-top: 20px;
+  transition: all 0.25s;
+
+  &__tabs {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #f8f8f9;
+  }
+  &__list {
+    width: 100%;
+    padding-top: 48px;
+    height: calc(100vh) !important;
+    overflow: scroll;
+  }
+  &__list::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__list {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+.activeScroll {
+  margin-top: 0;
+  transition: all 0.5s;
+}

@@ -1,0 +1,455 @@
+.Home {
+  height: 100%;
+  display: flex;
+}
+.Home__aboutUs {
+  width: 28%;
+}
+.Home__content {
+  flex-basis: 44%;
+  overflow: scroll;
+  filter: drop-shadow(0px 4px 12px rgba(104, 118, 132, 0.1));
+}
+.Home__wallet {
+  flex-basis: 28%;
+}
+
+.AboutUs {
+  height: 100%;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 90px;
+  padding-bottom: 144px;
+}
+.AboutUs__profileImage {
+  height: 64px;
+  width: 64px;
+  margin-bottom: 180px;
+}
+.AboutUs__pplLogo {
+  height: 55px;
+  width: 176px;
+  margin-bottom: 50px;
+}
+.AboutUs__desc {
+  font-size: 14px;
+  line-height: 20px;
+  color: #141619;
+  text-align: left;
+}
+.AboutUs__desc--title {
+  font-weight: 600;
+}
+.AboutUs__desc--subTitle {
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+.AboutUs__desc--info {
+  font-weight: 300;
+  margin-bottom: 24px;
+}
+.AboutUs__desc--learnMore {
+  color: #0648d7;
+  cursor: pointer;
+}
+
+.Wallet {
+  height: 100%;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 205px;
+  padding-bottom: 144px;
+}
+.Wallet__user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0px 4px 12px rgba(104, 118, 132, 0.1);
+  margin-bottom: 28px;
+}
+.Wallet__user--icon {
+  width: 36px;
+  height: 36px;
+}
+.Wallet__connect {
+  color: #141619;
+}
+.Wallet__connect--title {
+  width: 150px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 28px;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+.Wallet__connect--features {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #687684;
+  margin-bottom: 32px;
+}
+.Wallet__connect--features ul {
+  padding-inline-start: 0px;
+}
+.Wallet__connect--features ul li {
+  list-style: none;
+  font-size: 12px;
+  line-height: 18px;
+}
+.Wallet__connect--features ul li:before {
+  content: "*";
+  font-size: 16px;
+  font-weight: bold;
+  vertical-align: middle;
+  vertical-align: -webkit-baseline-middle;
+  line-height: 18px;
+  opacity: 0.5;
+  margin-right: 12px;
+}
+.Wallet__connect--metamask {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+  height: 64px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  background: #141619;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  padding: 24px;
+}
+.Wallet__connect--metamask .icon {
+  width: 24px;
+  height: 24px;
+}
+.Wallet__connect--wallet-connect {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+  height: 64px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  background: #ee57ac;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  padding: 24px;
+}
+.Wallet__connect--wallet-connect .icon {
+  width: 24px;
+  height: 24px;
+}
+.Wallet__connect--coinbase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+  height: 64px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  background: #0648d7;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  padding: 24px;
+  margin-bottom: 32px;
+}
+.Wallet__connect--coinbase .icon {
+  width: 24px;
+  height: 24px;
+}
+.Wallet__connect--privacy {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #0648d7;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+.Content {
+  color: #141619;
+  position: relative;
+}
+.Content__tabs {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #f8f8f9;
+}
+.Content__list {
+  width: 100%;
+  padding-top: 68px;
+  height: calc(100vh) !important;
+  overflow: scroll;
+}
+.Content__list::-webkit-scrollbar {
+  display: none;
+}
+.Content__list {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.TabsHeader {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding-top: 20px;
+}
+.TabsHeader .tabs {
+  width: 67%;
+}
+.TabsHeader .search {
+  display: flex;
+  align-items: center;
+  width: 33%;
+  transition: all 0.3s;
+  position: absolute;
+  right: 0;
+  height: 48px;
+  background: #eaecee;
+}
+.TabsHeader .search .icon {
+  width: 12px;
+  height: 12px;
+  margin: 16px;
+}
+.TabsHeader .search input {
+  width: 100%;
+  background: transparent;
+  height: 100%;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #141619;
+  opacity: 0.4;
+}
+.TabsHeader .search input:focus {
+  outline: none;
+}
+.TabsHeader .search .close-icon {
+  width: 12px;
+  height: 12px;
+  margin: 16px;
+  opacity: 0;
+  transition: 0.3s;
+}
+.TabsHeader .search .show-close-icon {
+  opacity: 1;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.TabsHeader .searchActive {
+  width: 100%;
+}
+
+.Tabs {
+  display: flex;
+  flex-direction: row;
+  height: 48px;
+}
+.Tabs__tab {
+  width: 33%;
+  color: #687684;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.Tabs__tab--icon {
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
+}
+.Tabs__tab--section {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.activeTab {
+  color: inherit;
+  background: #fff;
+}
+
+.List {
+  background: #fff;
+}
+.List__filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 32px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #687684;
+  border-bottom: 1px dashed #bdc5cd;
+}
+.List__filters--options {
+  font-weight: Bold;
+}
+
+.ListItem {
+  display: flex;
+  padding: 20px 32px;
+  border-bottom: 1px dashed #bdc5cd;
+}
+.ListItem__image {
+  height: 64px;
+  width: 64px;
+  margin-right: 15px;
+}
+.ListItem__details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.ListItem__details--user-info {
+  width: 100%;
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.3px;
+  color: #687684;
+}
+.ListItem__details--user-info .user-name {
+  font-weight: 600;
+  color: #141619;
+  margin-right: 6px;
+}
+.ListItem__details--user-info .wallet-name,
+.ListItem__details--user-info .wallet-address {
+  margin-right: 10px;
+}
+.ListItem__details--user-info .verified-icon {
+  margin-left: 6px;
+  margin-right: 6px;
+}
+.ListItem__details--user-info .ellipsis {
+  cursor: pointer;
+}
+.ListItem__details--feed-info {
+  font-size: 16px;
+  line-height: 22px;
+  color: #141619;
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 6px;
+}
+.ListItem__details--feed-info .dollerValue {
+  font-weight: bold;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+.ListItem__details--feed-info .weth-crypto {
+  font-weight: bold;
+  color: #0648d7;
+  height: 13px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+.ListItem__details--feed-info .weth-change {
+  font-weight: bold;
+  background-color: #0648d7;
+  color: #fff;
+  width: 35px;
+  height: 13px;
+  padding: 1px;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: -0.3px;
+  margin-right: 6px;
+  text-align: center;
+}
+.ListItem__details--feed-info .atom-crypto {
+  font-weight: bold;
+  color: #2d8690;
+  height: 13px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+.ListItem__details--feed-info .atom-change {
+  font-weight: bold;
+  background-color: #2d8690;
+  color: #fff;
+  height: 13px;
+  width: 35px;
+  padding: 1px;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: -0.3px;
+  margin-right: 6px;
+  text-align: center;
+}
+.ListItem__details--user-actions {
+  display: flex;
+}
+.ListItem__details--user-actions .comment {
+  font-size: 14px;
+  line-height: 16px;
+  color: #687684;
+  margin-right: 50px;
+}
+.ListItem__details--user-actions .comment__icon {
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+}
+.ListItem__details--user-actions .like {
+  font-size: 14px;
+  line-height: 16px;
+  color: #687684;
+}
+.ListItem__details--user-actions .like__icon {
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+}
+
+#root {
+  background-color: #f8f8f9;
+  min-height: 100vh;
+  display: block;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App {
+  height: 100vh;
+}

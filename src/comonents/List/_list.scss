@@ -1,0 +1,17 @@
+.list {
+  background: #fff;
+
+  &__filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 32px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #687684;
+    border-bottom: 1px dashed #bdc5cd;
+    &--options {
+      font-weight: Bold;
+    }
+  }
+}

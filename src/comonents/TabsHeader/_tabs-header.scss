@@ -1,0 +1,61 @@
+.tabs-header {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  &__tabs {
+    width: 67%;
+  }
+  &__search {
+    display: flex;
+    align-items: center;
+    width: 34%;
+    transition: all 0.3s;
+    position: absolute;
+    right: 0;
+    height: 48px;
+    background: #eaecee;
+
+    &--icon {
+      width: 12px;
+      height: 12px;
+      margin: 16px;
+    }
+    &--input {
+      width: 100%;
+      background: transparent;
+      height: 100%;
+      border: none;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+      color: #141619;
+      opacity: 0.4;
+    }
+    &--input:focus {
+      outline: none;
+    }
+    .close-icon {
+      width: 12px;
+      height: 12px;
+      margin: 16px;
+      opacity: 0;
+      transition: 0.3s;
+    }
+    .show-close-icon {
+      opacity: 1;
+    }
+
+    @keyframes fadein {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  }
+
+  .searchActive {
+    width: 100%;
+  }
+}

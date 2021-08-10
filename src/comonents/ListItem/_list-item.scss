@@ -1,0 +1,123 @@
+.list-item {
+  display: flex;
+  padding: 20px 32px;
+  border-bottom: 1px dashed #bdc5cd;
+  &__image {
+    height: 64px;
+    width: 64px;
+    margin-right: 15px;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    &--user-info {
+      width: 100%;
+      margin-bottom: 6px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: -0.3px;
+      color: #687684;
+
+      .user-name {
+        font-weight: 600;
+        color: #141619;
+        margin-right: 6px;
+      }
+
+      .wallet-name,
+      .wallet-address {
+        margin-right: 10px;
+      }
+
+      .verified-icon {
+        margin-left: 6px;
+        margin-right: 6px;
+      }
+      .ellipsis {
+        cursor: pointer;
+      }
+    }
+    &--feed-info {
+      font-size: 16px;
+      line-height: 22px;
+      color: #141619;
+      display: flex;
+      align-items: baseline;
+      margin-bottom: 6px;
+      .dollerValue {
+        font-weight: bold;
+        margin-left: 6px;
+        margin-right: 6px;
+      }
+      .weth-crypto {
+        font-weight: bold;
+        color: #0648d7;
+        height: 13px;
+        margin-left: 6px;
+        margin-right: 6px;
+      }
+      .weth-change {
+        font-weight: bold;
+        background-color: #0648d7;
+        color: #fff;
+        width: 35px;
+        height: 13px;
+        padding: 1px;
+        font-size: 11px;
+        line-height: 13px;
+        letter-spacing: -0.3px;
+        margin-right: 6px;
+        text-align: center;
+      }
+      .atom-crypto {
+        font-weight: bold;
+        color: #2d8690;
+        height: 13px;
+        margin-left: 6px;
+        margin-right: 6px;
+      }
+      .atom-change {
+        font-weight: bold;
+        background-color: #2d8690;
+        color: #fff;
+        height: 13px;
+        width: 35px;
+        padding: 1px;
+        font-size: 11px;
+        line-height: 13px;
+        letter-spacing: -0.3px;
+        margin-right: 6px;
+        text-align: center;
+      }
+    }
+    &--user-actions {
+      display: flex;
+
+      .comment {
+        font-size: 14px;
+        line-height: 16px;
+        color: #687684;
+        margin-right: 50px;
+        &__icon {
+          width: 10px;
+          height: 10px;
+          margin-right: 6px;
+        }
+      }
+      .like {
+        font-size: 14px;
+        line-height: 16px;
+        color: #687684;
+        &__icon {
+          width: 10px;
+          height: 10px;
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+}

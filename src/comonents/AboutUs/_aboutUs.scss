@@ -1,0 +1,39 @@
+.aboutUs {
+  height: 100%;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 90px;
+  padding-bottom: 144px;
+
+  &__profileImage {
+    height: 64px;
+    width: 64px;
+    margin-bottom: 180px;
+  }
+  &__pplLogo {
+    height: 55px;
+    width: 176px;
+    margin-bottom: 50px;
+  }
+  &__desc {
+    font-size: 14px;
+    line-height: 20px;
+    color: #141619;
+    text-align: left;
+    &--title {
+      font-weight: 600;
+    }
+    &--subTitle {
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+    &--info {
+      font-weight: 300;
+      margin-bottom: 24px;
+    }
+    &--learnMore {
+      color: #0648d7;
+      cursor: pointer;
+    }
+  }
+}

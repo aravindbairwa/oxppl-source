@@ -1,0 +1,30 @@
+.tabs {
+  display: flex;
+  flex-direction: row;
+  height: 48px;
+  cursor: pointer;
+  &__tab {
+    width: 33%;
+    color: #687684;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    &--icon {
+      width: 12px;
+      height: 12px;
+      margin-right: 10px;
+    }
+
+    &--section {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}
+
+.active-tab {
+  color: inherit;
+  background: #fff;
+}
